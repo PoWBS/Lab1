@@ -6,7 +6,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="author" content="Patryk">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<style>
 		body {
@@ -34,87 +35,89 @@
 </head>
 
 <body>
-	<a href="StartPage.html">to the place.....</a>
-	<h1>Contact us!</h1>
+	<div class="container">
+		<a href="StartPage.html">to the place.....</a>
+		<h1>Contact us!</h1>
 
-	<p>Hey, if you&apos;d like to contact us, you can use that <br>
-		totally not unnecessairly elaborate contact form right here
-	</p>
+		<p>Hey, if you&apos;d like to contact us, you can use that <br>
+			totally not unnecessairly elaborate contact form right here
+		</p>
 
-	<form>
-		<fieldset>
-			<legend>Essential Info</legend>
-			<label style="display: block" for="name">Name</label>
-			<input type="text" name="name" id="name">
+		<form>
+			<fieldset>
+				<legend>Essential Info</legend>
+				<label style="display: block" for="name">Name</label>
+				<input type="text" name="name" id="name">
 
-			<br>
-			<label style="display: block" for="surname">Surname</label>
-			<input type="text" name="surname" id="surname">
+				<br>
+				<label style="display: block" for="surname">Surname</label>
+				<input type="text" name="surname" id="surname">
 
-			<br>
-			<label style="display: block" for="bank-pwd">Bank account password</label>
-			<input type="password" name="bank-password" id="bank-pwd">
-		</fieldset>
+				<br>
+				<label style="display: block" for="bank-pwd">Bank account password</label>
+				<input type="password" name="bank-password" id="bank-pwd">
+			</fieldset>
 
-		<fieldset>
-			
-			<legend>Not so essential info</legend>
-			<p>Pet preferences</p>
-			<input type="radio" name="pet" id="dog">
-			<label for="dog">Dogs</label>
-			<br>
+			<fieldset>
 
-			<input type="radio" name="pet" id="cat">
-			<label for="cat">Cats</label>
-			<br>
+				<legend>Not so essential info</legend>
+				<p>Pet preferences</p>
+				<input type="radio" name="pet" id="dog">
+				<label for="dog">Dogs</label>
+				<br>
 
-			<input type="radio" name="pet" id="guinea-pig">
-			<label for="guinea-pig">Guinea pigs</label>
-			<br>
+				<input type="radio" name="pet" id="cat">
+				<label for="cat">Cats</label>
+				<br>
 
-			<input type="radio" name="pet" id="all">
-			<label for="all">All of them</label>
-			<br>
+				<input type="radio" name="pet" id="guinea-pig">
+				<label for="guinea-pig">Guinea pigs</label>
+				<br>
 
-			<label for="reason">Reason for contacting us</label>
-			<select name="reason" id="reason">
-				<option value="boredom">I&apos;m just bored</option>
-				<option value="suggestion">I have a suggestion for you</option>
-				<option value="friendship">Looking for new friends</option>
-				<option value="insult">I want to personally insult you</option>
-			</select>
+				<input type="radio" name="pet" id="all">
+				<label for="all">All of them</label>
+				<br>
 
-			<p>What games do you play?</p>
-			<input type="checkbox" name="games" id="action">
-			<label for="action">Action</label>
-			<input type="checkbox" name="games" id="action-adventure">
-			<label for="action-adventure">Action-adventure</label>
-			<input type="checkbox" name="games" id="adventure">
-			<label for="adventure">Adventure</label>
-			<input type="checkbox" name="games" id="RPG">
-			<label for="RPG">RPG</label>
-			<input type="checkbox" name="games" id="simulators">
-			<label for="simulators">Simulators</label>
-			<input type="checkbox" name="games" id="strategy">
-			<label for="strategy">Strategy</label>
-			<input type="checkbox" name="games" id="sports">
-			<label for="sports">Sports</label>
-			<input type="checkbox" name="games" id="online">
-			<label for="online">Online games</label>
-			<input type="checkbox" name="games" id="indie">
-			<label for="indie">Indie</label>
-			<input type="checkbox" name="games" id="other">
-			<label for="other">Other</label>
-			<br>
-			<label style="display: block" for="message">So what do you want to tell us?</label>
-			<textarea rows="3" cols="30" name="message" id="message"></textarea>
-			<br>
-			<input type="submit" value="Give us your soul">
-			<input type="reset" value="I wonder what that does">
-			<br>
-			<a href="mailto:sorrykiddojustjoiking@nothing.com">Or you could just send us an email instead!</a>
-		</fieldset>
-	</form>
+				<label for="reason">Reason for contacting us</label>
+				<select name="reason" id="reason">
+					<option value="boredom">I&apos;m just bored</option>
+					<option value="suggestion">I have a suggestion for you</option>
+					<option value="friendship">Looking for new friends</option>
+					<option value="insult">I want to personally insult you</option>
+				</select>
+
+				<p>What games do you play?</p>
+				<input type="checkbox" name="games" id="action">
+				<label for="action">Action</label>
+				<input type="checkbox" name="games" id="action-adventure">
+				<label for="action-adventure">Action-adventure</label>
+				<input type="checkbox" name="games" id="adventure">
+				<label for="adventure">Adventure</label>
+				<input type="checkbox" name="games" id="RPG">
+				<label for="RPG">RPG</label>
+				<input type="checkbox" name="games" id="simulators">
+				<label for="simulators">Simulators</label>
+				<input type="checkbox" name="games" id="strategy">
+				<label for="strategy">Strategy</label>
+				<input type="checkbox" name="games" id="sports">
+				<label for="sports">Sports</label>
+				<input type="checkbox" name="games" id="online">
+				<label for="online">Online games</label>
+				<input type="checkbox" name="games" id="indie">
+				<label for="indie">Indie</label>
+				<input type="checkbox" name="games" id="other">
+				<label for="other">Other</label>
+				<br>
+				<label style="display: block" for="message">So what do you want to tell us?</label>
+				<textarea rows="3" cols="30" name="message" id="message"></textarea>
+				<br>
+				<input type="submit" value="Give us your soul">
+				<input type="reset" value="I wonder what that does">
+				<br>
+				<a href="mailto:sorrykiddojustjoiking@nothing.com">Or you could just send us an email instead!</a>
+			</fieldset>
+		</form>
+	</div>
 </body>
 
 </html>
