@@ -1,0 +1,36 @@
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+th,
+td {
+	padding: 5px;
+	text-align: center;
+}
+td {
+	font-family: "Times New Roman";
+}
+#AvailabilityTable td:nth-child(even){
+	background-color: #e3feff;
+}
+#AvailabilityTable td:first-child{
+	background-color: #537ced;
+	font-weight: 700;
+}
+#Bosses {
+	background-color: #B9B9B9;
+}
+#Players {
+	background-color: #B9B9B9;
+}
+#Wings {
+	background-color: #8A8A8A;
+}
+#Corner {
+	background-color: #000000;
+}
+#TableHeaders {
+	background-color: #60d4e6;
+}
