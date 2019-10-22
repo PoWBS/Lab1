@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+nav ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+
+}
+nav li:first-child{
+    font-weight: bold;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav a:hover:not(.active) {
+    background-color: #555;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+div.container {
+    padding: 0 16px;
+}
+
+.active {
+    background-color: #888;
+}
+
+h1.banner{
+    padding: 0 16px;
+}
