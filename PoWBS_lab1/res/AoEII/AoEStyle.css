@@ -1,0 +1,74 @@
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+.nomobile {
+	display: none;
+}
+/*EZ clap to mobile users*/
+@media screen and (max-width: 600px){
+	.container {
+		display: none;
+	}
+	body {
+		background-position: center;
+		height: 1200px;
+	}
+	.nomobile {
+		display: inline;
+	}
+}
+body{
+	background-image: url("background.png");
+	background-color: #e2e2e2;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: left;
+}
+h1,
+h2,
+h3,
+p {
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+p, 
+dl, 
+ol, 
+ul {
+	font-size: 24px;
+}
+h1 {
+	font-size: 72px;
+	border-bottom: 5px solid blue;
+	width: 580px;
+}
+h2 {
+	font-size: 48px;
+	border-left: 5px double blue;
+}
+h3 {
+	font-size: 32px;
+}
+p.wild {
+	width: 1450px;
+	background-color: rgba(255,255,255,0.7);
+	border: 5px groove black;
+	border-radius: 15px;
+	padding: 5px;
+}
+.lists {
+	background-color: white;
+	border: 5px solid black;
+	padding: 5px;
+}
+.txtfields {
+	width: 1450px;
+	background-color: rgba(255,255,255,0.7);
+	border: 5px dashed black;
+	border-radius: 15px;
+	padding: 5px;
+}
+.col-6 {
+	text-align: center;
+}

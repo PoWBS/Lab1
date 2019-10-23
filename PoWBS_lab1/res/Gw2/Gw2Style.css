@@ -1,3 +1,11 @@
+.secret {
+	display: none;
+}
+@media screen and (max-width: 800px) {
+	.secret {
+		display: inline;
+	}
+}
 body {
 	background-image: url("background.jpg");
 	background-color: #e2e2e2;
@@ -12,19 +20,26 @@ p {
 	color: white;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-p {
-	font-size: 20px;
+p, 
+dl, 
+ol, 
+ul {
+	font-size: 24px;
 }
 h1 {
-	font-size: 70px;
+	font-size: 72px;
+	border-bottom: 5px solid red;
 }
 h2 {
-	font-size: 40px;
+	font-size: 48px;
+	border-left:5px double red;
 }
 h3 {
-	font-size: 30px;
+	font-size: 32px;
 }
-
+dd {
+	font-size: 22px;
+}
 
 table{
 	background-color: black;
@@ -43,6 +58,9 @@ td {
 td {
 	font-family: "Times New Roman";
 }
+a{
+	font-size: 24px;
+}
 a:link{
 	color: blue;
 	text-decoration: underline;
@@ -52,11 +70,11 @@ a:visited{
 	text-decoration: none;
 }
 a:active{
-	color: yellow;
+	color: green;
 	text-decoration: underline;
 }
 a:hover{
-	color: white;
+	color: yellow;
 	text-decoration: underline;
 }
 
@@ -86,7 +104,7 @@ a:hover{
 	background-color: #60d4e6;
 }
 .lists {
-	width: 500px;
+	width: 750px;
 	background-color: white;
 	border: 5px solid black;
 	padding: 5px;
