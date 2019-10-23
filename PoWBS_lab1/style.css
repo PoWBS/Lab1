@@ -103,3 +103,14 @@ h1.banner {
 .col-12 {
     width: 100%;
 }
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
