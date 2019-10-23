@@ -1,17 +1,34 @@
+* {
+    font-weight: lighter;
+    font-size: 12pt;
+}
+
 body {
     background-color: #555;
-    color: whitesmoke;
-    
+    color: #DDD;
 }
 
 a:link {
     color: #BBB
 }
 
-a:visited{
-    color: #F0F
+a:visited {
+    color: #9CC
 }
 
-a:hover img{
+a:hover img {
     opacity: 50%;
+}
+
+h1, h2 {
+    font-weight: normal;
+    font-size: 200%;
+}
+
+table>th, td, tr {
+    font-size: 14px;
+}
+
+[id*="frostpunk-"]{
+    color: #9CC;
 }
