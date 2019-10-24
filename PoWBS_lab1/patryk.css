@@ -38,14 +38,25 @@ table>th, td {
     font-size: 14px;
 }
 
-table, td, th {
-    border-top: 1px solid white;
+table{
+    
+    min-width: 800px;
     border-collapse: collapse;
-    background: rgb(104, 126, 126);
+    background: rgb(84, 107, 107);
+    
+}
+
+tr, td{
+    border-top: solid 1px #AAA;
+    padding: 8px;
 }
 
 th {
-    background: rgb(95, 138, 146);
+    background: rgb(58, 72, 75);
+}
+
+tr:nth-child(even) {
+    background-color: #586d7e;
 }
 
 [id*="frostpunk-"] {
@@ -60,6 +71,6 @@ h2~p {
     font-weight: normal;
 }
 
-[id*="overwatch-"]{
+[id*="overwatch-"] {
     color: rgb(179, 138, 63);
 }

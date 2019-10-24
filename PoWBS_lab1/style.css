@@ -46,6 +46,12 @@ nav {
     z-index: 99;
 }
 
+@media only screen and (max-width: 600px){
+    nav{
+        position: initial;
+    }
+}
+
 div.container {
     padding: 0 16px;
 }
@@ -115,4 +121,11 @@ h1.banner {
     content: "";
     clear: both;
     display: table;
+}
+
+fieldset{
+    border-radius: 16px;
+}
+fieldset.nonessential{
+    border-style: dotted;
 }
