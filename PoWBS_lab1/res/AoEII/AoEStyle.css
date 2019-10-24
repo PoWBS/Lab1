@@ -72,3 +72,22 @@ p.wild {
 .col-6 {
 	text-align: center;
 }
+a{
+	font-size: 24px;
+}
+a:link{
+	color: blue;
+	text-decoration: underline;
+}
+a:visited{
+	color: red;
+	text-decoration: none;
+}
+a:active{
+	color: green;
+	text-decoration: underline;
+}
+a:hover{
+	color: yellow;
+	text-decoration: underline;
+}

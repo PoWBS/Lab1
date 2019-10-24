@@ -1,0 +1,39 @@
+h1 {
+	font-size: 72px;
+}
+p {
+	font-size: 24px;
+}
+#bongofever {
+	opacity: 0.7;
+}
+.bongobox {
+  position: relative;
+  width: 25%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.bongobox:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
