@@ -149,6 +149,9 @@ fieldset.nonessential{
 
 .dropcontent{
     display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #333;
 }
 
 .dropdown:hover .dropcontent{
