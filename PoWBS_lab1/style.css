@@ -127,5 +127,10 @@ fieldset{
     border-radius: 16px;
 }
 fieldset.nonessential{
-    border-style: dotted;
+    /* border-style: dotted; */
+    border-image: url(res/swoleborder.jpg) 15% round;    
+}
+
+#radial{
+    background-image: radial-gradient(lightblue,red, green);
 }

@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Roboto;
+    src: url(font/Roboto-Regular.ttf);
+}
+
 * {
     font-weight: lighter;
     font-size: 12pt;
@@ -18,6 +23,8 @@ a:visited {
 
 a:hover img {
     opacity: 50%;
+    transition: transform 1s;
+    transform: rotate(360deg);
 }
 
 h1 {
@@ -38,15 +45,13 @@ table>th, td {
     font-size: 14px;
 }
 
-table{
-    
+table {
     min-width: 600px;
     border-collapse: collapse;
     background: rgb(84, 107, 107);
-    
 }
 
-tr, td{
+tr, td {
     border-top: solid 1px #AAA;
     padding: 8px;
 }
@@ -72,5 +77,30 @@ h2~p {
 }
 
 [id*="overwatch-"] {
+    font-family: Roboto;
     color: rgb(179, 138, 63);
+    text-shadow: 2px 2px 4px black;
+}
+
+.shadowbox {
+    box-shadow: 2px 0px 5px rgba(221, 138, 30, 0.8);
+}
+
+.shadowboxhsl {
+    box-shadow: 2px 0px 5px hsla(22, 100%, 70%, 0.8);
+}
+
+.uncle{
+    position: relative;
+    width: 200px;
+    height: 400px;
+}
+
+.absoluteness{
+    position: absolute;
+    left: 80px;
+}
+
+#owpic{
+    background-image: linear-gradient(to right, white , orange);
 }
