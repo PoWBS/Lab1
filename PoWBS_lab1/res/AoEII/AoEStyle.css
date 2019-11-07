@@ -91,3 +91,10 @@ a:hover{
 	color: yellow;
 	text-decoration: underline;
 }
+#borderimg {
+	width: 1450px;
+	border: 10px solid transparent;
+	background-color: rgba(255,255,255,0.7);
+	padding: 15px;
+	border-image: url(borderimg.jpg) 30 round;
+}
