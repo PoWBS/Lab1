@@ -41,7 +41,7 @@ h2 {
     font-size: 175%;
 }
 
-table>th, td {
+/* table>th, td {
     font-size: 14px;
 }
 
@@ -62,7 +62,7 @@ th {
 
 tr:nth-child(even) {
     background-color: #586d7e;
-}
+} */
 
 [id*="frostpunk-"] {
     color: #9CC;
