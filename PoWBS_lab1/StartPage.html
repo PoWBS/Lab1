@@ -62,7 +62,6 @@
 				<label class="test">Could you please not</label>
 			</fieldset>
 		</form>
-		<br>
 		<form>
 			<fieldset>
 				<label>Value1: </label>
@@ -77,7 +76,33 @@
 				<label id="Result"></label>
 			</fieldset>
 		</form>
+		<form>
+			<fieldset>
+				<table id="testTable">
+					<tr>
+						<th>Header 1</th>
+						<th>Header 2</th>
+						<th>Header 3</th>
+					</tr>
+					<tr>
+						<td>Fill 1</td>
+						<td>Fill 2</td>
+						<td>Fill 3</td>
+					</tr>
+					<tr>
+						<td>Fill 4</td>
+						<td>Fill 5</td>
+						<td>Fill 6</td>
+					</tr>
+				</table>
+				<br>
+				<label>New headers: </label>
+				<input type="text" id="nHeaders">
+				<br>
+				<input type="button" value="Alter" onclick="changeHeader('testTable', 'nHeaders')">
 
+			</fieldset>
+		</form>
 		<div class="bongobox">
 			<a href="https://www.youtube.com/watch?v=jHWU6qDakyo" target="_blank"><img src="res/bongocat.gif" width=360
 					height=360 alt="Something went wrong :C" id="bongofever"></a>

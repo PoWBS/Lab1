@@ -31,5 +31,9 @@ function multiplication(in1, in2, res){
 }
 
 function changeHeader(tableID, headers){
-	var elemements = document.getElementById(tableID);
+	var elemements = document.getElementById(tableID).rows[0].cells;
+	var nHeaders = document.getElementById(headers).value.split(/[ ]+/);
+	for(var n = 0; n<elemements.length; n++){
+		elemements[n].innerHTML = nHeaders[n];
+	}
 }
