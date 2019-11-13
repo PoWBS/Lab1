@@ -37,3 +37,8 @@ function changeHeader(tableID, headers){
 		elemements[n].innerHTML = nHeaders[n];
 	}
 }
+
+function namePrompt(targetID){
+	console.log("test")
+	document.getElementById(targetID).innerHTML = "Hello "+prompt("please enter your name:", "visitor")+"!";
+}

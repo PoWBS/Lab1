@@ -11,7 +11,7 @@
 	<script src="MainScripts.js"></script>
 </head>
 
-<body id="radial">
+<body id="radial" onload="namePrompt('targetHeader')">
 	<nav>
 		<ul>
 			<li><a class="active" href="StartPage.html">Home</a></li>
@@ -32,9 +32,9 @@
 			</li>
 		</ul>
 	</nav>
-
 	<div class="container">
 		<h1>Games and stuff</h1>
+		<h2 id="targetHeader"></h2>
 		<p>We wanted to make a webpage about the computer games we play <img src="res/EZ.png" width=45 height=45
 				alt="EZ"></p>
 		<p>Each subpage is dedicated to its <i>own</i> game</p>
@@ -100,9 +100,9 @@
 				<input type="text" id="nHeaders">
 				<br>
 				<input type="button" value="Alter" onclick="changeHeader('testTable', 'nHeaders')">
-
 			</fieldset>
 		</form>
+
 		<div class="bongobox">
 			<a href="https://www.youtube.com/watch?v=jHWU6qDakyo" target="_blank"><img src="res/bongocat.gif" width=360
 					height=360 alt="Something went wrong :C" id="bongofever"></a>
