@@ -1,3 +1,12 @@
+function initialTable(){
+	var table = document.getElementById("AvailabilityTable");
+	for(var n = 2; n<table.rows.length; n++){
+		for(var x = 2; n<table.rows[n].cells.length; x++){
+			table.rows[n].cells[x].innerHTML = "TODO";
+		}
+	}
+}
+
 function updateAvailabilityTable(){
 	var rows = document.getElementById("AvailabilityTable").rows;
 
@@ -39,7 +48,7 @@ function updateAvailabilityTable(){
 	}
 	//Clarence Availability [5]
 	if(!document.getElementById("al2").checked){
-		for(var n = 2; n.rows[5].cells.length; n++){
+		for(var n = 2; n<rows[5].cells.length; n++){
 			rows[5].cells[n].innerHTML = "TODO";
 		}
 	}
@@ -56,7 +65,7 @@ function updateAvailabilityTable(){
 	//Dice Availability [6]
 	if(!document.getElementById("al3").checked){
 		for(var n = 2; n<rows[6].cells.length; n++){
-			rows[6].cells[n].innerHTML = "Chrono sub";
+			rows[6].cells[n].innerHTML = "TODO";
 		}
 	}
 	else {
@@ -93,7 +102,9 @@ function updateAvailabilityTable(){
 	}
 	//Korn Availability [8]
 	if(!document.getElementById("al5").checked){
-
+		for(var n = 2; n<rows[8].cells.length; n++){
+			rows[8].cells[n].innerHTML = "TODO"
+		}
 	}
 	else {
 		for(var n = 2; n<rows[8].cells.length; n++){
