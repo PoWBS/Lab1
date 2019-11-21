@@ -78,8 +78,8 @@ h2~p {
 
 [id*="overwatch-"] {
     font-family: Roboto;
-    color: rgb(179, 138, 63);
-    text-shadow: 2px 2px 4px black;
+    color: rgb(212, 147, 24);
+    text-shadow: 1px 1px 1px black;
 }
 
 .shadowbox {
@@ -104,3 +104,4 @@ h2~p {
 #owpic{
     background-image: linear-gradient(to right, white , orange);
 }
+
