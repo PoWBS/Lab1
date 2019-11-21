@@ -11,37 +11,66 @@
 	<script src="res/Gw2/Gw2Scripts.js"></script>
 	<script src="jquery/jquery-3.4.1.min.js"></script>
 	<script>
+		function calculateTax(PlayerDPS){
+			if($('#TheBest')==null){
+				return 0
+			}
+			else {
+				var BannerDPS = $('#TheBest > .DPS').html();
+				if(BannerDPS<PlayerDPS){
+					return 0;
+				}
+				else{
+					return Math.floor((BannerDPS-PlayerDPS)/1000)
+				}
+			}
+		}
 		function addPlayer(Name, Role, DPS){
-			var newRow = $('<tr class="TaxRow" class="Player"></tr>');
-			var newName = $("<td></td>").text(document.getElementById(Name).value);
-			var newRole = $("<td></td>").text(document.getElementById(Role).value);
-			var newDPS = $('<td class="DPS"></td>').text(document.getElementById(DPS).value);
-			var button = $('<button onclick="removePlayer()"></button>').text("Delete");
-			var buttoncell = $('<td></td>').append(button);
-			$(newRow).append(newName, newRole, newDPS, buttoncell);
-			$('#plebRow').after(newRow);
+			if(isNaN(document.getElementById(DPS).value)){
+			}
+			else {
+				var newRow = $('<tr class="TaxRow Player"></tr>');
+				var newName = $("<td></td>").text(document.getElementById(Name).value);
+				var newRole = $("<td></td>").text(document.getElementById(Role).value);
+				var newDPS = $('<td class="DPS"></td>').text(document.getElementById(DPS).value);
+				var newTax = $('<td class="TaxCell" colspan="2"></td>').text(calculateTax(document.getElementById(DPS).value));
+				$(newRow).append(newName, newRole, newDPS, newTax);
+				$('#plebRow').after(newRow);
+			}
 		}		
 		function addWarrior(Name, DPS){
-			var newRow = $('<tr class="TaxRow" id="TheBest"></tr>');
-			var newName = $('<td></td>').text(document.getElementById(Name).value);
-			var newRole = $('<td></td>').text("Bannerboy");
-			var newDPS = $('<td class="DPS" colspan="2"></td>').text(document.getElementById(DPS).value);
-			var button = $('<button onclick="removeWarrior()"></button>').text("Delete");
-			var buttoncell = $('<td></td>').append(button);
-			$(newRow).append(newName, newRole, newDPS, buttoncell);
-			$('#Bannerboy').after(newRow);
-			$('#BannerButton').hide();
+			if(isNaN(document.getElementById(DPS).value)){
+			}
+			else {
+				var newRow = $('<tr class="TaxRow" id="TheBest"></tr>');
+				var newName = $('<td></td>').text(document.getElementById(Name).value);
+				var newRole = $('<td></td>').text("Bannerboy");
+				var newDPS = $('<td class="DPS" colspan="2"></td>').text(document.getElementById(DPS).value);
+				var button = $('<button onclick="removeWarrior()"></button>').text("Delete");
+				var buttoncell = $('<td></td>').append(button);
+				$(newRow).append(newName, newRole, newDPS, buttoncell);
+				$('#Bannerboy').after(newRow);
+				$('#BannerButton').hide();
+			}
 		}
 		function removeWarrior(){
 			$('#TheBest').remove();
 			$('#BannerButton').show();
 		}
 		function removePlayer(){
-
+			$("#plebRow + .Player").remove();
 		}
-		function calculateTax(Player){
-			var BannerDPS = $('#TheBest > .DPS').html();
-			
+		function sumTax(){
+			var sum = 0;
+			$('td.TaxCell').each(function(){
+				if(isNaN($(this).html())){
+					sum += 0	
+				}
+				else{
+					sum += parseInt($(this).html());
+				}
+			});
+			$('#SumRow td').text(sum)
 		}
 	</script>
 </head>
@@ -495,14 +524,15 @@
 					<th>Name</th>
 					<th>Role</th>
 					<th>DPS</th>
-					<th colspan="2">TAX</th>
+					<th>TAX</th>
+					<th><button onclick="removePlayer()">Delete</button></th>
 				</tr>
 				<tr id="SumRow" class="TaxRow">
 					<th>Sum:</th>
 					<td colspan="4"></td>
 				</tr>
 			</table>
-			<button id="TaxSum">Sum</button>
+			<button onclick="sumTax()">Sum</button>
 		</div>
 		<div class="col-12">
 			<h2 id="div">Upcoming Features</h2>
