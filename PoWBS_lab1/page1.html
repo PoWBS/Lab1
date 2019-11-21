@@ -9,6 +9,41 @@
 	<link rel="stylesheet" type="text/css" href="res/Gw2/Gw2Style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="res/Gw2/Gw2Scripts.js"></script>
+	<script src="jquery/jquery-3.4.1.min.js"></script>
+	<script>
+		function addPlayer(Name, Role, DPS){
+			var newRow = $('<tr class="TaxRow" class="Player"></tr>');
+			var newName = $("<td></td>").text(document.getElementById(Name).value);
+			var newRole = $("<td></td>").text(document.getElementById(Role).value);
+			var newDPS = $('<td class="DPS"></td>').text(document.getElementById(DPS).value);
+			var button = $('<button onclick="removePlayer()"></button>').text("Delete");
+			var buttoncell = $('<td></td>').append(button);
+			$(newRow).append(newName, newRole, newDPS, buttoncell);
+			$('#plebRow').after(newRow);
+		}		
+		function addWarrior(Name, DPS){
+			var newRow = $('<tr class="TaxRow" id="TheBest"></tr>');
+			var newName = $('<td></td>').text(document.getElementById(Name).value);
+			var newRole = $('<td></td>').text("Bannerboy");
+			var newDPS = $('<td class="DPS" colspan="2"></td>').text(document.getElementById(DPS).value);
+			var button = $('<button onclick="removeWarrior()"></button>').text("Delete");
+			var buttoncell = $('<td></td>').append(button);
+			$(newRow).append(newName, newRole, newDPS, buttoncell);
+			$('#Bannerboy').after(newRow);
+			$('#BannerButton').hide();
+		}
+		function removeWarrior(){
+			$('#TheBest').remove();
+			$('#BannerButton').show();
+		}
+		function removePlayer(){
+
+		}
+		function calculateTax(Player){
+			var BannerDPS = $('#TheBest > .DPS').html();
+			
+		}
+	</script>
 </head>
 
 <body>
@@ -374,7 +409,7 @@
 			<input type="button" value="Update Table" onclick="updateAvailabilityTable()">
 		</form>
 		<h2 id="Logs">Logs</h2>
-		<div class="col-9">
+		<div class="col-6">
 			<p>Here are some examples of processed log files from our kills this Monday</p>
 			<div class="lists">
 				<ul>
@@ -411,7 +446,7 @@
 			</p>
 			<p>The log files themselves looks nothing like the linked webpages.</p>
 		</div>
-		<div class="col-3">
+		<div class="col-6">
 			<h3>Examples of unprocessed log files</h3>
 			<div class="lists">
 				<ol>
@@ -424,6 +459,50 @@
 			<p>Opening these file will reveal a lot of hexadecimal numbers</p>
 			<p>One of the challenges with integrating logs into the webpage is to translate these numbers into something
 				readable</p>
+		</div>
+		<div class="col-12">
+			<h2>BannerTax</h2>
+			<p>Warrior:</p>
+			<form>
+				<fieldset>
+					<label>Name: </label>
+					<input type="text" id="NameFieldW"/>
+					<label>DPS: </label>
+					<input type="text" id="DPSFieldW"/>
+					<input type="button" value="Add Warrior" id="BannerButton" onclick="addWarrior('NameFieldW', 'DPSFieldW')">
+				</fieldset>
+			</form>
+			<p>DPS players</p>
+			<form>
+				<fieldset>
+					<label>Name: </label>
+					<input type="text" id="NameField"/>
+					<label>Role: </label>
+					<input type="text" id="RoleField"/>
+					<label>DPS: </label>
+					<input type="text" id="DPSField"/>
+					<input type="button" value="Add Player" onclick="addPlayer('NameField', 'RoleField', 'DPSField')">
+				</fieldset>
+			</form>
+			<table>
+				<tr id="Bannerboy" class="TaxRow">
+					<th>Name</th>
+					<th>Role</th>
+					<th colspan="2">DPS</th>
+					<th style="background-color: black"></th>
+				</tr>
+				<tr id="plebRow" class="TaxRow">
+					<th>Name</th>
+					<th>Role</th>
+					<th>DPS</th>
+					<th colspan="2">TAX</th>
+				</tr>
+				<tr id="SumRow" class="TaxRow">
+					<th>Sum:</th>
+					<td colspan="4"></td>
+				</tr>
+			</table>
+			<button id="TaxSum">Sum</button>
 		</div>
 		<div class="col-12">
 			<h2 id="div">Upcoming Features</h2>
