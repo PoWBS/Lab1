@@ -114,161 +114,156 @@
 		<h2 id="overwatch-id-tracker">Match tracker</h2>
 
 
-		<h4 id="overwatch-match-add">Add a new match</h3>
+		<h4 id="overwatch-match-add">Add a new match</h4>
 
-			<form class="form">
-				<div class="row">
-					<div class="form-group col">
-						<label for="modeselect">Game Mode</label>
-						<select class="form-control" name="modeselect" id="modeselect">
-							<option value="1">Assault</option>
-							<option value="2">Control</option>
-							<option value="3">Escort</option>
-							<option value="4">Hybrid</option>
-						</select>
-					</div>
-					<div class="form-group col">
-						<label for="mapselect">Map</label>
-						<select class="form-control" name="mapselect" id="mapselect">
-							<option value="1">Hanamura</option>
-							<option value="1">Horizon Lunar Colony</option>
-							<option value="1">Paris</option>
-							<option value="1">Temple of Anubis</option>
-							<option value="1">Volskaya Industries</option>
-
-							<option value="2">Busan</option>
-							<option value="2">Ilios</option>
-							<option value="2">Lijiang Tower</option>
-							<option value="2">Nepal</option>
-							<option value="2">Oasis</option>
-
-							<option value="3">Dorado</option>
-							<option value="3">Havana</option>
-							<option value="3">Junkertown</option>
-							<option value="3">Rialto</option>
-							<option value="3">Route 66</option>
-							<option value="3">Watchpoint: Gibraltar</option>
-
-							<option value="4">Blizzard World</option>
-							<option value="4">Eichenwalde</option>
-							<option value="4">Hollywood</option>
-							<option value="4">King's Row</option>
-							<option value="4">Numbani</option>
-						</select>
-					</div>
-
-
-
-					<div class="form-group col">
-						<label for="roleselect">Role</label>
-						<select class="form-control" name="roleselect" id="roleselect">
-							<option value="1">Damage</option>
-							<option value="2">Support</option>
-							<option value="3">Tank</option>
-
-						</select>
-					</div>
-					<div class="form-group col">
-						<label for="heroselect">Hero</label>
-						<select class="form-control" name="heroselect" id="heroselect">
-							<option value="1">Ashe</option>
-							<option value="1">Bastion</option>
-							<option value="1">Doomfist</option>
-							<option value="1">Genji</option>
-							<option value="1">Hanzo</option>
-							<option value="1">Junkrat</option>
-							<option value="1">McCree</option>
-							<option value="1">Mei</option>
-							<option value="1">Pharah</option>
-							<option value="1">Reaper</option>
-							<option value="1">Soldier 76</option>
-							<option value="1">Sombra</option>
-							<option value="1">Symmetra</option>
-							<option value="1">Torbjorn</option>
-							<option value="1">Tracer</option>
-							<option value="1">Widowmaker</option>
-
-							<option value="2">Ana</option>
-							<option value="2">Baptiste</option>
-							<option value="2">Brigitte</option>
-							<option value="2">Lucio</option>
-							<option value="2">Mercy</option>
-							<option value="2">Moira</option>
-							<option value="2">Zenyatta</option>
-
-							<option value="3">Orisa</option>
-							<option value="3">Reinhardt</option>
-							<option value="3">Roadhog</option>
-							<option value="3">Sigma</option>
-							<option value="3">Winston</option>
-							<option value="3">Wrecking Ball</option>
-							<option value="3">Zarya</option>
-
-
-						</select>
-					</div>
-					<div class="form-group col">
-						<label for="SRating">SR</label>
-						<input type="text" class="form-control" id="SRating" placeholder="e.g. 25, -24">
-					</div>
-					<div class="form-group col">
-						<label for="result">Result</label>
-						<select class="form-control" name="result" id="result">
-							<option value="W">Victory</option>
-							<option value="L">Defeat</option>
-							<option value="D">Draw</option>
-						</select>
-					</div>
+		<form class="form">
+			<div class="row">
+				<div class="form-group col">
+					<label for="modeselect">Game Mode</label>
+					<select class="form-control" name="modeselect" id="modeselect">
+						<option value="1">Assault</option>
+						<option value="2">Control</option>
+						<option value="3">Escort</option>
+						<option value="4">Hybrid</option>
+					</select>
 				</div>
-				<div class="row">
-					<div class="form-group col-6">
-						<label for="comment">Comment</label>
-						<textarea class="form-control" id="comment" maxlength="255"></textarea>
-					</div>
+				<div class="form-group col">
+					<label for="mapselect">Map</label>
+					<select class="form-control" name="mapselect" id="mapselect">
+						<option value="1">Hanamura</option>
+						<option value="1">Horizon Lunar Colony</option>
+						<option value="1">Paris</option>
+						<option value="1">Temple of Anubis</option>
+						<option value="1">Volskaya Industries</option>
 
+						<option value="2">Busan</option>
+						<option value="2">Ilios</option>
+						<option value="2">Lijiang Tower</option>
+						<option value="2">Nepal</option>
+						<option value="2">Oasis</option>
 
+						<option value="3">Dorado</option>
+						<option value="3">Havana</option>
+						<option value="3">Junkertown</option>
+						<option value="3">Rialto</option>
+						<option value="3">Route 66</option>
+						<option value="3">Watchpoint: Gibraltar</option>
+
+						<option value="4">Blizzard World</option>
+						<option value="4">Eichenwalde</option>
+						<option value="4">Hollywood</option>
+						<option value="4">King's Row</option>
+						<option value="4">Numbani</option>
+					</select>
 				</div>
-				<div class="form-group row">
-					<button style="background:rgba(221, 138, 30, 0.8); 
-					color:black;border-color: black;" 
-					type="button" class="btn btn-primary" 
-					id="addGameButton">Add match</button>
+
+
+
+				<div class="form-group col">
+					<label for="roleselect">Role</label>
+					<select class="form-control" name="roleselect" id="roleselect">
+						<option value="1">Damage</option>
+						<option value="2">Support</option>
+						<option value="3">Tank</option>
+
+					</select>
 				</div>
-			</form>
+				<div class="form-group col">
+					<label for="heroselect">Hero</label>
+					<select class="form-control" name="heroselect" id="heroselect">
+						<option value="1">Ashe</option>
+						<option value="1">Bastion</option>
+						<option value="1">Doomfist</option>
+						<option value="1">Genji</option>
+						<option value="1">Hanzo</option>
+						<option value="1">Junkrat</option>
+						<option value="1">McCree</option>
+						<option value="1">Mei</option>
+						<option value="1">Pharah</option>
+						<option value="1">Reaper</option>
+						<option value="1">Soldier 76</option>
+						<option value="1">Sombra</option>
+						<option value="1">Symmetra</option>
+						<option value="1">Torbjorn</option>
+						<option value="1">Tracer</option>
+						<option value="1">Widowmaker</option>
+
+						<option value="2">Ana</option>
+						<option value="2">Baptiste</option>
+						<option value="2">Brigitte</option>
+						<option value="2">Lucio</option>
+						<option value="2">Mercy</option>
+						<option value="2">Moira</option>
+						<option value="2">Zenyatta</option>
+
+						<option value="3">Orisa</option>
+						<option value="3">Reinhardt</option>
+						<option value="3">Roadhog</option>
+						<option value="3">Sigma</option>
+						<option value="3">Winston</option>
+						<option value="3">Wrecking Ball</option>
+						<option value="3">Zarya</option>
 
 
-			<h4 id="overwatch-match-history">Your match history</h3>
+					</select>
+				</div>
+				<div class="form-group col">
+					<label for="SRating">SR</label>
+					<input type="text" class="form-control" id="SRating" placeholder="e.g. 2554, max 5000">
+				</div>
+				<div class="form-group col">
+					<label for="result">Result</label>
+					<select class="form-control" name="result" id="result">
+						<option value="1">Victory</option>
+						<option value="0">Defeat</option>
+						<option value="-1">Draw</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-6">
+					<label for="comment">Comment</label>
+					<textarea class="form-control" id="comment" maxlength="255"></textarea>
+				</div>
 
-				<table id="matchTable" class="table">
-					<thead>
-						<tr>
-							<th>Game Mode</th>
-							<th>Map</th>
-							<th>Role</th>
-							<th>Hero</th>
-							<th>Result</th>
-							<th>SR</th>
-							<th>Comment</th>
-							<th>Manage</th>
-						</tr>
-					</thead>
 
-					<tbody>
+			</div>
+			<div class="form-group">
+				<button type="button" class="btn btn-secondary" id="addGameButton">Add match</button>
+			</div>
+		</form>
 
 
-					</tbody>
+		<h4 id="overwatch-match-history">Your match history</h4>
 
-					<tfoot>
-						<tr>
-							<td>Win ratio</td>
-							<td>SR gain</td>
-							<td>Final SR</td>
-						</tr>
-						<tr>
+		<table id="matchTable" class="table table-sm">
+			<thead>
+				<tr>
+					<th>Game Mode</th>
+					<th>Map</th>
+					<th>Role</th>
+					<th>Hero</th>
+					<th>Result</th>
+					<th>SR</th>
+					<th>Comment</th>
+					<th>Manage</th>
+				</tr>
+			</thead>
 
-						</tr>
-					</tfoot>
-				</table>
+			<tbody>
+
+
+			</tbody>
+
+		</table>
+
+		<p id="currentSR">Current SR:</p>
+		<p id="SRdifference">SR gain:</p>
+		<p id="ratio">Win ratio:</p>
+		<button id="calculateStuff" class="btn btn-secondary">Calculate</button>
+
+
+
 	</div>
 
 
